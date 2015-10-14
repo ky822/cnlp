@@ -643,7 +643,7 @@ def train_lstm(
 
     print 'Train ', train_err, 'Valid ', valid_err, 'Test ', test_err
     if saveto:
-        numpy.savez('cnlpExperiments',
+        numpy.savez(saveto,
             speed=(end_time - start_time) / (1. * (eidx + 1)),
             time=end_time - start_time,
             train=experiment_train_list,
